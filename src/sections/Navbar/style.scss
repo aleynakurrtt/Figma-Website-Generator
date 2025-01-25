@@ -1,0 +1,131 @@
+#navbar-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+
+    .click-craft img:hover{
+      width: 200px;
+    }
+    nav {
+      display: flex;
+      gap: 40px;
+  
+      a {
+        color: #77798F;
+        font-family: Roboto, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        text-decoration: none;
+  
+        &:hover {
+          color: #865BFF;
+          font-size: 24px;
+          font-weight: 700;
+        }
+      }
+    }
+  
+    .sign-button {
+      display: flex;
+      gap: 16px;
+  
+      button {
+        display: flex;
+        width: 138px;
+        padding: 16px 40px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 40px;
+        border: 3px solid var(--Stock, #2A2B3A);
+        background-color: transparent;
+        color: #FFF;
+        font-family: Roboto, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+  
+        &.sign-up:hover,
+        &.sign-in:hover {
+          border: 3px solid #7241FF;
+          box-shadow: 0 0 10px #74F;
+        }
+      }
+    }
+  
+    .hamburger-menu-open {
+      display: none;
+      width: 24px;
+      cursor: pointer;
+    }
+  }
+  
+  // Mobil uyumluluk
+  @media screen and (max-width: 500px) {
+    #navbar-page {
+      justify-content: space-between;
+      padding: 20px;
+      
+      .click-craft{
+        display: none;
+      }
+      nav {
+        display: none;
+      }
+  
+      .sign-button .sign-in {
+        display: none;
+      }
+  
+      .hamburger-menu-open {
+        display: block;
+      }
+    }
+  
+    .hamburger-menu-wrapper {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #0A0B1C;
+      z-index: 10;
+      padding: 20px;
+  
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+      }
+  
+      .mobile-nav-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 50px;
+  
+        nav {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+  
+          a {
+            color: #FFF;
+            font-size: 24px;
+            font-weight: 500;
+            text-decoration: none;
+  
+            &:hover {
+              color: #865BFF;
+            }
+          }
+        }
+      }
+    }
+  }
+  

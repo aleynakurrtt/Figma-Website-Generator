@@ -1,0 +1,188 @@
+#set-up {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#set-up .process h2 {
+  font-family: Roboto;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 64.8px */
+  background: radial-gradient(70.71% 70.71% at 50% 50%, #FFF 30%, rgba(255, 255, 255, 0.5) 84.77%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 24px;
+  margin-top: 135px;
+}
+#set-up .process p {
+  color: var(--Paragraph, #77798F);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 38.4px */
+  margin-bottom: 68px;
+  max-width: 55ch;
+}
+
+.card {
+  width: 80%;
+  height: 645px;
+  border-radius: 42px;
+  border-top: 1px solid #664dff;
+  border-bottom: 3px solid #664dff;
+  background: #010314;
+  box-shadow: 0px 4px 100px 0px rgba(102, 77, 255, 0.2);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-card {
+  display: flex;
+  gap: 100px;
+  padding: 50px 91px 50px 50px;
+  align-items: center;
+}
+
+.saly-group {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.saly-group img {
+  border-radius: 50px;
+  border: 1px solid var(--Stock, #2A2B3A);
+  background: radial-gradient(217.23% 100.08% at 50% 18.33%, rgba(0, 0, 0, 0) 21.67%, rgba(102, 51, 238, 0.5) 69.34%, rgba(255, 255, 255, 0.5) 100%);
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.how-it-works {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.how-it-works p {
+  background: linear-gradient(95deg, #627FFF 8.51%, #865BFF 94.21%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 25.6px */
+  letter-spacing: 6.4px;
+  text-transform: uppercase;
+}
+
+.complete-your-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.complete-your-profile h3 {
+  font-family: Roboto;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 52.8px */
+  background: radial-gradient(70.71% 70.71% at 50% 50%, #FFF 30%, rgba(255, 255, 255, 0.5) 84.77%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.complete-your-profile p {
+  color: var(--Paragraph, #77798F);
+  font-family: Roboto;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 41.6px */
+}
+
+.complete-button {
+  display: flex;
+  padding: 22px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  border: 1.5px solid #7241FF;
+  background: var(--Black, #010314);
+  box-shadow: 0px 0px 10px 0px rgba(119, 68, 255, 0.7);
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 700px) {
+  #set-up .process h2 {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 24px */
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  #set-up .process p {
+    display: none;
+  }
+  .how-it-works {
+    display: none;
+  }
+  .complete-your-profile h3 {
+    display: none;
+  }
+  .complete-your-profile p {
+    color: var(--Paragraph, #77798F);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+  }
+  .container-card {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  .saly-group {
+    order: 2;
+  }
+  .saly-group img {
+    border: none;
+    background: none;
+  }
+  .card {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */

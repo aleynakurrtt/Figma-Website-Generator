@@ -1,0 +1,141 @@
+.container-always {
+    display: flex;
+    flex-wrap: nowrap; /* Yan yana hizalanmayı zorunlu kıl */
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: 100px auto;
+    padding: 50px;
+    background: #010314;
+    border-radius: 30px;
+    border-top: 2px solid var(--CTA, #4467FF);
+    border-bottom: 2px solid var(--CTA, #4467FF);
+    box-shadow: 0px 16px 80px rgba(102, 77, 255, 0.1);
+    color: wheat;
+  
+    .reachable {
+      flex: 1; /* Sol taraf tüm alanı kapsar */
+      max-width: 55%; /* Metin genişliği */
+      h3 {
+        font-family: Roboto;
+        font-size: 54px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 64.8px */
+        background: radial-gradient(70.71% 70.71% at 50% 50%, #FFF 30%, rgba(255, 255, 255, 0.50) 84.77%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+      }
+  
+      .feel-free {
+        font-size: 18px;
+        line-height: 1.8;
+        color: var(--Paragraph, #77798F);
+        margin-top: 20px;
+      }
+  
+      .lineer {
+        width: 100%;
+        height: 1px;
+        background: #182542;
+        margin: 20px 0;
+      }
+  
+      .user {
+        display: flex;
+        align-items: center;
+  
+        img {
+          border-radius: 50%;
+          width: 60px;
+          height: 60px;
+          margin-right: 16px;
+        }
+  
+        .user-name {
+          h5 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff;
+          }
+  
+          .click-craft {
+            font-size: 14px;
+            color: var(--Paragraph, #77798F);
+            margin-top: 4px;
+          }
+  
+          .social-media {
+            display: flex;
+            gap: 10px;
+            margin-top: 8px;
+  
+            img {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+  
+    .right-picture {
+      flex: 0 1 40%; /* Sağdaki görsel için alan */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      img {
+        max-width: 250px;
+        height: auto;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .container-always {
+      flex-direction: column;
+      padding: 20px;
+  
+      .reachable {
+        max-width: 100%;
+
+        h3{
+          font-family: Roboto;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 120%; /* 24px */
+        }
+      }
+       
+     
+      .right-picture {
+        margin-top: 20px;
+  
+        img {
+          max-width: 200px;
+        }
+      }
+    }
+    .user-name{
+      .social-media img{
+        display: none;
+      }
+      h5{
+        color: #FFF;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 2px;
+text-transform: uppercase;
+max-width: 20ch;
+margin-bottom: 8px;
+      }
+    } 
+  }
+  

@@ -1,0 +1,30 @@
+.top-rated {
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 1.2;
+  background: radial-gradient(70.71% 70.71% at 50% 50%, #fff 30%, rgba(255, 255, 255, 0.5) 84.77%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 135px 0;
+}
+
+.container-this {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 30px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+@media (max-width: 768px) {
+  .container-this {
+    grid-template-columns: 1fr;
+    grid-gap: 39px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}/*# sourceMappingURL=style.css.map */
