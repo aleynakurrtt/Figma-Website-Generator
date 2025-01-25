@@ -40,33 +40,11 @@
     margin-bottom: 68px;
 }
 
-.all-card {
+.all-card-2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    gap: 70px;
-    flex-wrap: wrap;
+    grid-template-rows: repeat(3, auto); 
+    gap: 80px; 
+   
 }
 
-
-@media (max-width: 768px) {
-    .chevron {
-        align-items: flex-end; 
-        margin-right: 10px;
-    }
-
-    .all-portfolios {
-        font-size: 32px;
-        margin-top: 15px;
-        margin-bottom: 40px;
-    }
-
-    .all-card {
-        grid-template-columns: 1fr;
-        gap: 20px; 
-    }
-
-    .chevron button {
-        margin-right: 10px;
-        padding: 8px 16px; 
-    }
-}

@@ -14,7 +14,8 @@ margin-top: 15px;
 margin-bottom: 98px;
 }
 
-.all-card{
+.all-card-3{
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
+    gap:80px;
 }

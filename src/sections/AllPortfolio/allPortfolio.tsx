@@ -11,7 +11,7 @@ function AllPortfolio() {
      <div className='all-portfolios'>
         <h2>All Portfolios</h2>
         </div>
-        <div className="all-card">
+        <div className="all-card-2">
             <PortfolioCard/>
             <PortfolioCard/>
             <PortfolioCard/>

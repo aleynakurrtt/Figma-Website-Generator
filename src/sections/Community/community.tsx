@@ -7,7 +7,7 @@ function Community() {
     <div className='community-all'>
       <h2>Community</h2>
     </div> 
-    <div className='all-card'>
+    <div className='all-card-3'>
         <CommunityCard/>
         <CommunityCard/>
         <CommunityCard/>
