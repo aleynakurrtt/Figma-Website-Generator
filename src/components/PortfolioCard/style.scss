@@ -1,99 +1,100 @@
 .card-2 {
-    width: 448px;
-    height: 328px;
-    flex-shrink: 0;
-    border-radius: 20px;
-    border-top: 2px solid #664DFF;
-    border-right: 0.5px solid #664DFF;
-    border-bottom: 4px solid #664DFF;
-    border-left: 0.5px solid #664DFF;
+  width: 448px;
+  height: 328px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border-top: 2px solid #664DFF;
+  border-right: 0.5px solid #664DFF;
+  border-bottom: 4px solid #664DFF;
+  border-left: 0.5px solid #664DFF;
+  margin: 0 auto; /* Mobilde ortalamak için */
   
-    img {
-      margin-top: 17px;
-      margin-left: 8px;
-      width: 100%; 
-      height: auto; 
-    }
+  img {
+    margin-top: 17px;
+    margin-left: 8px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Görsel kenarlarını yuvarlak hale getirir */
   }
-  
-  .all-favorite {
+}
+
+.all-favorite {
+  display: flex;
+  gap: 47px;
+  justify-content: center;
+  align-items: center;
+
+  button {
     display: flex;
-    gap: 47px;
+    width: 175px;
+    height: 50px;
+    padding: 16px 55px;
     justify-content: center;
     align-items: center;
-  
-    button {
-      display: flex;
-      width: 175px;
-      height: 50px;
-      padding: 16px 55px;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      flex-shrink: 0;
-      border-radius: 10px;
-      border: 3px solid #7241FF;
-      box-shadow: 0px 0px 10px 0px #74F;
-      color: #FFF;
-      font-family: Roboto;
-      font-size: 18px;
-      font-weight: 500;
-      margin-top: 13px;
-    }
-  }
-  
-  .favorite {
-    display: flex;
     gap: 10px;
-  
-    p {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #FFF;
-      font-family: Roboto;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 160%;
-      text-transform: uppercase;
-      margin-top: 15px;
-    }
-  
-    img {
-      width: 25px;
-      height: 25px;
-    }
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 3px solid #7241FF;
+    box-shadow: 0px 0px 10px 0px #74F;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 13px;
+    background: transparent; /* Düzgün bir tasarım için */
+    cursor: pointer;
+    transition: all 0.3s ease;
   }
-  
- 
-  @media (max-width: 768px) {
-    .card-2 {
-      width: 50%; 
-      height: auto;
-    }
-  
-    .all-favorite {
-      flex-direction: column; 
-      gap: 20px;
-    }
-  
-    .favorite {
-      gap: 15px;
-    }
-  
-    .favorite img {
-      width: 20px;
-      height: 20px;
-    }
-  
-    .favorite p {
-      font-size: 14px; 
-    }
-  
-    .all-favorite button {
-      width: 100%; 
-      padding: 12px 20px;
-      font-size: 16px; 
-    }
+
+  button:hover {
+    background: #7241FF;
+    color: #FFF;
   }
-  
+}
+
+.favorite {
+  display: flex;
+  gap: 10px;
+
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 160%;
+    text-transform: uppercase;
+    margin-top: 15px;
+  }
+
+  img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+
+  .all-favorite {
+    gap: 20px;
+    align-items: center; 
+  }
+
+
+  .favorite {
+    gap: 15px;
+  }
+
+  .favorite img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .favorite p {
+    font-size: 14px; 
+  }
+}

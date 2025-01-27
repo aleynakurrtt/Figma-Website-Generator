@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .card-2 {
   width: 448px;
   height: 328px;
@@ -7,12 +8,14 @@
   border-right: 0.5px solid #664DFF;
   border-bottom: 4px solid #664DFF;
   border-left: 0.5px solid #664DFF;
+  margin: 0 auto; /* Mobilde ortalamak için */
 }
 .card-2 img {
   margin-top: 17px;
   margin-left: 8px;
   width: 100%;
   height: auto;
+  border-radius: 10px; /* Görsel kenarlarını yuvarlak hale getirir */
 }
 
 .all-favorite {
@@ -38,6 +41,13 @@
   font-size: 18px;
   font-weight: 500;
   margin-top: 13px;
+  background: transparent; /* Düzgün bir tasarım için */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.all-favorite button:hover {
+  background: #7241FF;
+  color: #FFF;
 }
 
 .favorite {
@@ -62,13 +72,9 @@
 }
 
 @media (max-width: 768px) {
-  .card-2 {
-    width: 50%;
-    height: auto;
-  }
   .all-favorite {
-    flex-direction: column;
     gap: 20px;
+    align-items: center;
   }
   .favorite {
     gap: 15px;
@@ -79,10 +85,5 @@
   }
   .favorite p {
     font-size: 14px;
-  }
-  .all-favorite button {
-    width: 100%;
-    padding: 12px 20px;
-    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */

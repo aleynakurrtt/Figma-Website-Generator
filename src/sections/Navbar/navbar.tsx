@@ -28,8 +28,8 @@ function Navbar() {
           </nav>
           <img src='/public/hamburger.svg' className="hamburger-menu-open" onClick={toggleMenu} />
           <div className="sign-button">
-            <button className='sign-in'>SignIn</button>
-            <button className="sign-up">SignUp </button>
+           <Link to="signIn"> <button className='sign-in'>SignIn</button></Link>
+           <Link to="signUp"> <button className="sign-up">SignUp </button></Link>
           </div>
         </div>
       </header>
